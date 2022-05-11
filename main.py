@@ -23,7 +23,8 @@ async def on_ready():
     
 @client.command(description = 'Bot latency')
 async def ping(ctx):
-    await ctx.send(f"Pong! Latency is {round(ctx.latency * 1000)}ms")
+  await ctx.send("Pong!")
+  await ctx.send(f"Latency is {round(ctx.latency * 1000)}ms")
 
 @client.command(description = 'HELLO!')
 async def hello(ctx):
