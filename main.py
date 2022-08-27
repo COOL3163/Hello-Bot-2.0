@@ -23,8 +23,9 @@ async def on_ready():
     
 @client.command(description = 'Bot latency')
 async def ping(ctx):
+  bot_latency = round(ctx.latency * 1000)
   await ctx.send("Pong!")
-  await ctx.send(f"Latency is {round(ctx.latency * 1000)}ms")
+  await ctx.send(f'Latency is' + bot_latency + 'ms' )
 
 @client.command(description = 'HELLO!')
 async def hello(ctx):
@@ -46,6 +47,10 @@ async def hunt(ctx):
   huntthing = random.choice(huntanimal)
   await ctx.channel.send('You caught a ' + huntthing + '!' )
 
+@client.command()
+async def ampro(ctx):
+  await ctx.channel.send('am pro')
+  await ctx.channel.send('what a noob')
 @client.command(description = 'Try flipping heads')
 async def flipheads(ctx):
   flipchanceheads = random()
@@ -72,7 +77,7 @@ async def cool(ctx):
 @client.command(description = 'dm someone')
 async def dm(ctx, user: discord.User = None, *, value = None):
   if user == ctx.message.author:
-    await ctx.send("You can't DM yourself goofy")
+    await ctx.send("You can't DM yourself noob")
   else:
     await ctx.message.delete()
     if user == None:
