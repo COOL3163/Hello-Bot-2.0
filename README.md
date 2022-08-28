@@ -6,3 +6,6 @@ Links: https://replit.com/@ElliottDong/Hello-Bot-20?v=1
 https://stats.uptimerobot.com/GK08zFB2MV
 
 https://bf7jcscf.status.cron-job.org
+
+UPDATE:
+Now broken because of the new discord slash commands
