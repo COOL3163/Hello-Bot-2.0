@@ -50,7 +50,6 @@ async def hunt(ctx):
 @client.command()
 async def ampro(ctx):
   await ctx.channel.send('am pro')
-  await ctx.channel.send('what a noob')
 @client.command(description = 'Try flipping heads')
 async def flipheads(ctx):
   flipchanceheads = random()
@@ -72,7 +71,7 @@ async def fliptails(ctx):
 @client.command(description = 'COOL3163 is COOL!!!')
 async def cool(ctx):
   await ctx.channel.send(file=discord.File('COOL3163.png'))
-  await ctx.channel.send("COOL3163 is cool and pro")
+  await ctx.channel.send("COOL3163 is pro")
 
 @client.command(description = 'dm someone')
 async def dm(ctx, user: discord.User = None, *, value = None):
