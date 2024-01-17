@@ -8,4 +8,4 @@ https://stats.uptimerobot.com/GK08zFB2MV
 https://bf7jcscf.status.cron-job.org
 
 UPDATE:
-Now broken because of the new discord slash commands
+added new slash commands, run slash_commands.py
